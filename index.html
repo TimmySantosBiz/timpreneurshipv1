@@ -70,18 +70,14 @@
     color: white;
   }
 
-  .slider {
-  width: 100%;
-  height: var(--height);
-  max-width: 1200px;          /* keep it readable on large screens */
-  margin: 4rem auto;          /* adds space above/below and centers */
-  display: block;             /* ensures it behaves as a block section */
-  overflow: hidden;
-  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
-}
-
+    .slider {
+    ...
+    mask-image: linear-gradient(...);
+  }
+</style>
 
 </head>
+
 <body class="font-sans antialiased">
 
     <nav class="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto sticky top-0 z-50 bg-[#FFF9F5]/90 backdrop-blur-sm">
