@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timmy Santos | Digital Strategy Innovator</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        'cream-bg': '#FFF9F5',    /* Main background */
+                        'cream-dark': '#F5EFE0',
+                        'dark-text': '#1F1F1F',
+                        'card-yellow': '#FFD050',
+                        'card-purple': '#E0CFFC',
+                        'card-blue': '#C3DDFD',
+                        'card-orange': '#FFC0CB',
+                        'btn-black': '#000000',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+  body {
+    background-color: #FFF9F5;
+    color: #1F1F1F;
+  }
+  .blob-shape {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* From Uiverse.io by ashwin_5681 */
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: white;
+  }
+
+  .slider {
+  width: 100%;
+  height: var(--height);
+  max-width: 1200px;          /* keep it readable on large screens */
+  margin: 4rem auto;          /* adds space above/below and centers */
+  display: block;             /* ensures it behaves as a block section */
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+
+</head>
+<body class="font-sans antialiased">
+
+    <nav class="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto sticky top-0 z-50 bg-[#FFF9F5]/90 backdrop-blur-sm">
+        <div class="text-2xl font-heading font-extrabold tracking-tight">
+            Timmy<span class="text-gray-500">.</span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+            <a href="#about" class="hover:text-black transition">About</a>
+            <a href="#projects" class="hover:text-black transition">Projects</a>
+            <a href="#certifications" class="hover:text-black transition">Certifications</a>
+        </div>
+        <a href="mailto:timmysantosbiz@outlook.com" class="px-6 py-2.5 bg-btn-black text-white rounded-full font-medium text-sm hover:bg-gray-800 transition">
+            Contact Me
+        </a>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 md:px-12 pt-10 pb-20 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <div class="inline-block px-4 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-bold tracking-wide uppercase mb-6 text-gray-500 shadow-sm">
+                **Next-Gen Human-Centered Marketer**
+            </div>
+            <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] mb-6 text-dark-text">
+                Streamlining Digital <br> <span class="text-gray-400">Workflows with AI</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
+                Adopt the role of an expert content strategist tasked with creating engaging blog posts. Your primary objective is to craft compelling content that resonates with the target audience and aligns with digital marketing principles. Take a deep breath and work on this problem step-by-step. To achieve this, you should:
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#projects" class="px-8 py-4 bg-btn-black text-white rounded-full font-bold shadow-lg hover:shadow-xl hover:bg-gray-800 transition flex items-center justify-center">
+                    View My Work
+                    <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+                <a href="https://linkedin.com/in/timpreneurship" target="_blank" class="px-8 py-4 bg-white border-2 border-gray-200 text-dark-text rounded-full font-bold hover:border-black transition flex items-center justify-center">
+                    LinkedIn Profile
+                </a>
+            </div>
+        </div>
+
+        <div class="relative flex justify-center">
+            <div class="absolute top-10 right-10 bg-card-yellow px-4 py-2 rounded-lg shadow-lg z-20 animate-bounce delay-700">
+                <p class="text-xs font-bold">⭐ 3x Trust Interactions</p>
+            </div>
+            <div class="absolute bottom-10 left-0 bg-white px-4 py-3 rounded-xl shadow-lg z-20 border border-gray-100">
+                 <div class="flex items-center gap-2">
+                    <div class="bg-green-100 p-1.5 rounded-full"><i data-lucide="trending-up" class="w-4 h-4 text-green-600"></i></div>
+                    <div>
+                        <p class="text-xs text-gray-500">Efficiency</p>
+                        <p class="text-sm font-bold">40% Boost</p>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="w-full max-w-md bg-[#F0E6D2] blob-shape aspect-square relative overflow-hidden shadow-2xl">
+                <img src="https://ui-avatars.com/api/?name=Timmy+Santos&background=1F1F1F&color=fff&size=512" alt="Timmy Santos" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 md:px-12 mb-24">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-gray-200 py-10">
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl font-heading font-bold">1,598+</h3>
+                <p class="text-gray-500 text-sm font-medium">LinkedIn Followers</p>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl font-heading font-bold">500+</h3>
+                <p class="text-gray-500 text-sm font-medium">Connections</p>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl font-heading font-bold">You.com</h3>
+                <p class="text-gray-500 text-sm font-medium">AI Collab Verified</p>
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-3xl font-heading font-bold">Top 1%</h3>
+                <p class="text-gray-500 text-sm font-medium">Visual Systems (Canva)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-7xl mx-auto px-6 md:px-12 mb-24">
+        <div class="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-gray-100 flex flex-col md:flex-row gap-12 items-start">
+            
+            <div class="flex-1">
+                <span class="inline-block py-1 px-3 rounded-full bg-yellow-100 text-yellow-800 text-xs font-bold tracking-wider mb-4">
+                    👋 HI, I'M TIMMY SANTOS
+                </span>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold text-dark-text mb-6 leading-tight">
+                    From Customer Service to <br><span class="text-gray-400">Digital Strategy Innovator.</span>
+                </h2>
+                
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    My journey is anything but conventional. I started in <strong>customer service</strong>, mastering the art of solving problems under pressure. Today, I leverage that resilience to craft marketing strategies that thrive at the intersection of <strong>Data, Technology, and Storytelling.</strong>
+                </p>
+    
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    I don't just execute strategies—I <strong>build systems</strong>. By combining technical expertise with creativity, I deliver measurable growth and authentic connections. My approach is rooted in three non-negotiables: <strong>Curiosity, Adaptability, and Learning.</strong>
+                </p>
+    
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="mt-1 mr-4 flex-shrink-0 bg-green-100 p-2 rounded-full">
+                            <i data-lucide="search" class="w-5 h-5 text-green-700"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-text text-lg">Strategic SEO Execution</h4>
+                            <p class="text-sm text-gray-600">Specializing in technical SEO and keyword mapping. Achieved <strong>25%+ increase</strong> in search visibility via robust frameworks.</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex items-start">
+                        <div class="mt-1 mr-4 flex-shrink-0 bg-blue-100 p-2 rounded-full">
+                            <i data-lucide="zap" class="w-5 h-5 text-blue-700"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-text text-lg">AI-Powered Efficiency</h4>
+                            <p class="text-sm text-gray-600">Certified in Prompt Engineering. Developed frameworks that boost efficiency by <strong>40%</strong>, automating research & content workflows.</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex items-start">
+                        <div class="mt-1 mr-4 flex-shrink-0 bg-purple-100 p-2 rounded-full">
+                            <i data-lucide="heart" class="w-5 h-5 text-purple-700"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-dark-text text-lg">Human-Centered Strategy</h4>
+                            <p class="text-sm text-gray-600">Prioritizing authenticity. Transforming raw data into <strong>3x trust-based interactions</strong> and genuine user connections.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-full md:w-1/3 bg-cream-dark p-8 rounded-2xl border-2 border-dashed border-gray-300 flex flex-col justify-center items-center text-center self-stretch">
+                <i data-lucide="quote" class="w-12 h-12 text-card-yellow mb-6 fill-current"></i>
+                <p class="font-heading text-xl md:text-2xl font-bold text-dark-text italic mb-6">
+                    "Strategy without soul is noise. Every campaign I design speaks to real people, not just algorithms."
+                </p>
+                <div class="w-16 h-1 bg-black rounded-full mb-3"></div>
+                <p class="text-xs font-bold uppercase tracking-widest text-gray-500">Core Philosophy</p>
+            </div>
+    
+        </div>
+    </section>
+
+<!-- From Uiverse.io by ashwin_5681 --> 
+<div
+  class="slider"
+  style="--width: 200px;
+    --height: 200px;
+    --quantity: 5;"
+>
+  <div class="list">
+    <!-- 1. Workflows -->
+    <div class="item" style="--position: 1">
+      <div
+        class="card"
+        style="background: linear-gradient(to right, #ff7e5f, #feb47b); text-align: center;"
+      >
+        <h3>Workflows</h3>
+        <p>Streamlined, AI-guided systems that turn scattered tasks into repeatable, high‑leverage processes.</p>
+        <button>Explore workflows</button>
+      </div>
+    </div>
+
+    <!-- 2. Frameworks -->
+    <div class="item" style="--position: 2">
+      <div
+        class="card"
+        style="background: linear-gradient(to right, #6a11cb, #2575fc); text-align: center;"
+      >
+        <h3>Frameworks</h3>
+        <p>Proven strategic models that make complex decisions simple, structured, and repeatable.</p>
+        <button>View frameworks</button>
+      </div>
+    </div>
+
+    <!-- 3. Ideas -->
+    <div class="item" style="--position: 3">
+      <div
+        class="card"
+        style="background: linear-gradient(to right, #00c6ff, #0072ff); text-align: center;"
+      >
+        <h3>Ideas</h3>
+        <p>Insight-led concepts that connect data, creativity, and user needs into bold experiments.</p>
+        <button>See ideas</button>
+      </div>
+    </div>
+
+    <!-- 4. Content -->
+    <div class="item" style="--position: 4">
+      <div
+        class="card"
+        style="background: linear-gradient(to right, #ff512f, #dd2476); text-align: center;"
+      >
+        <h3>Content</h3>
+        <p>Narratives and assets designed to educate, convert, and build long-term trust at each touchpoint.</p>
+        <button>Browse content</button>
+      </div>
+    </div>
+
+    <!-- 5. Insights -->
+    <div class="item" style="--position: 5">
+      <div
+        class="card"
+        style="background: linear-gradient(to right, #ffb6c1, #ff69b4); text-align: center;"
+      >
+        <h3>Insights</h3>
+        <p>Signals from data, experiments, and user behavior that reveal what truly drives growth.</p>
+        <button>Unlock insights</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <section id="projects" class="max-w-7xl mx-auto px-6 md:px-12 mb-24">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div>
+                <h2 class="font-heading text-4xl font-bold mb-3">Featured Projects</h2>
+                <p class="text-gray-600 max-w-xl">
+                    Real-world strategies applying Advanced SEO, AI Integration, and Human-Centered Marketing.
+                </p>
+            </div>
+            <a href="#" class="hidden md:inline-block px-6 py-3 bg-btn-black text-white rounded-full text-sm font-bold hover:bg-gray-800 transition">View All Projects</a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover flex flex-col h-full">
+                <div class="h-48 bg-gray-100 rounded-xl mb-4 overflow-hidden relative group">
+                    <div class="absolute inset-0 bg-card-purple/30 flex items-center justify-center">
+                        <i data-lucide="map" class="w-12 h-12 text-purple-600 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="px-2 flex-grow">
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2 py-1 rounded">Strategy</span>
+                        <span class="text-xs font-bold text-gray-400">July 2024</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Content Marketing Strategy</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">
+                        Developed for Odysseys Unlimited. Increased organic traffic by 25% in 4 weeks through immersive storytelling and data-driven planning.
+                    </p>
+                </div>
+                <div class="mt-4 px-2 flex justify-between items-center border-t border-gray-100 pt-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="bar-chart" class="w-4 h-4 text-yellow-500"></i>
+                        <span class="text-xs font-bold">25% Growth</span>
+                    </div>
+                    <a href="#" class="px-4 py-2 bg-black text-white text-xs font-bold rounded-full hover:bg-gray-800 transition">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover flex flex-col h-full">
+                <div class="h-48 bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-card-blue/30 flex items-center justify-center">
+                        <i data-lucide="users" class="w-12 h-12 text-blue-600 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="px-2 flex-grow">
+                     <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">Influencer</span>
+                        <span class="text-xs font-bold text-gray-400">Aug 2024</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Influencer Targeting Strategy</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">
+                        Intent-focused plan connecting Odysseys Unlimited with Millennials. Balanced macro/micro influencers on TikTok & IG.
+                    </p>
+                </div>
+                <div class="mt-4 px-2 flex justify-between items-center border-t border-gray-100 pt-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="heart" class="w-4 h-4 text-red-500"></i>
+                        <span class="text-xs font-bold">High Trust</span>
+                    </div>
+                    <a href="#" class="px-4 py-2 bg-black text-white text-xs font-bold rounded-full hover:bg-gray-800 transition">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover flex flex-col h-full">
+                <div class="h-48 bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-card-yellow/30 flex items-center justify-center">
+                        <i data-lucide="smartphone" class="w-12 h-12 text-yellow-600 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="px-2 flex-grow">
+                     <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-yellow-600 bg-yellow-50 px-2 py-1 rounded">UGC Campaign</span>
+                        <span class="text-xs font-bold text-gray-400">Sept 2024</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Smartphone Pathfinder Program</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">
+                        Empowered Gen C travelers to co-create content. Combined influencer trust with UGC. Achieved 2x higher engagement.
+                    </p>
+                </div>
+                <div class="mt-4 px-2 flex justify-between items-center border-t border-gray-100 pt-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="trending-up" class="w-4 h-4 text-green-500"></i>
+                        <span class="text-xs font-bold">2x Eng.</span>
+                    </div>
+                    <a href="#" class="px-4 py-2 bg-black text-white text-xs font-bold rounded-full hover:bg-gray-800 transition">View Details</a>
+                </div>
+            </div>
+
+             <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover flex flex-col h-full">
+                <div class="h-48 bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-card-orange/30 flex items-center justify-center">
+                        <i data-lucide="target" class="w-12 h-12 text-pink-600 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="px-2 flex-grow">
+                     <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-pink-600 bg-pink-50 px-2 py-1 rounded">Optimization</span>
+                        <span class="text-xs font-bold text-gray-400">Oct 2024</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">KPI Framework for Growth</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">
+                        Developed a comprehensive KPI system aligning content with business objectives (Lead Quality, Amplification Rate).
+                    </p>
+                </div>
+                <div class="mt-4 px-2 flex justify-between items-center border-t border-gray-100 pt-4">
+                     <div class="flex items-center gap-1">
+                        <i data-lucide="crosshair" class="w-4 h-4 text-gray-600"></i>
+                        <span class="text-xs font-bold">Lead Focus</span>
+                    </div>
+                    <a href="#" class="px-4 py-2 bg-black text-white text-xs font-bold rounded-full hover:bg-gray-800 transition">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 card-hover flex flex-col h-full">
+                <div class="h-48 bg-gray-100 rounded-xl mb-4 overflow-hidden relative">
+                    <div class="absolute inset-0 bg-gray-200 flex items-center justify-center">
+                        <i data-lucide="search" class="w-12 h-12 text-gray-400 opacity-50"></i>
+                    </div>
+                </div>
+                <div class="px-2 flex-grow">
+                     <div class="flex justify-between items-start mb-2">
+                        <span class="text-xs font-bold text-gray-600 bg-gray-100 px-2 py-1 rounded">Audit</span>
+                        <span class="text-xs font-bold text-gray-400">Oct 2024</span>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-2">Content Strategy Audit</h3>
+                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">
+                        Identified gaps in SEO and engagement across blogs and social. Created an editorial calendar ensuring consistent visibility.
+                    </p>
+                </div>
+                <div class="mt-4 px-2 flex justify-between items-center border-t border-gray-100 pt-4">
+                    <div class="flex items-center gap-1">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-green-500"></i>
+                        <span class="text-xs font-bold">Optimized</span>
+                    </div>
+                    <a href="#" class="px-4 py-2 bg-black text-white text-xs font-bold rounded-full hover:bg-gray-800 transition">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 md:px-12 mb-24">
+        <h2 class="font-heading text-4xl font-bold mb-10 text-center">Unconventional Credibility</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-card-yellow rounded-2xl p-8 relative flex flex-col justify-center">
+                <div class="absolute -top-4 right-8 bg-white p-2 rounded-full shadow-sm">
+                    <i data-lucide="star" class="w-6 h-6 text-yellow-500 fill-current"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold mb-3">AI Collaboration Verified</h3>
+                <p class="font-medium text-gray-800 mb-4">
+                    "Rewarded with a 1-year free subscription from You.com for consistently improving their model's performance."
+                </p>
+                <div class="flex items-center gap-3 mt-auto">
+                    <div class="w-10 h-10 bg-black rounded-full flex items-center justify-center text-white font-bold">Y</div>
+                    <div>
+                        <p class="text-sm font-bold">You.com</p>
+                        <p class="text-xs text-gray-700">AI Research Partner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-card-blue rounded-2xl p-8 relative flex flex-col justify-center">
+                <div class="absolute -top-4 right-8 bg-white p-2 rounded-full shadow-sm">
+                    <i data-lucide="layout" class="w-6 h-6 text-blue-500 fill-current"></i>
+                </div>
+                <h3 class="font-heading text-2xl font-bold mb-3">Visual Systems Thinking</h3>
+                <p class="font-medium text-gray-800 mb-4">
+                    "Unlocked a free 1-month Canva Pro subscription after achieving 200+ consistent designs—proof of discipline."
+                </p>
+                <div class="flex items-center gap-3 mt-auto">
+                    <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">C</div>
+                    <div>
+                        <p class="text-sm font-bold">Canva</p>
+                        <p class="text-xs text-gray-700">Design Consistency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="max-w-7xl mx-auto px-6 md:px-12 mb-24">
+        <div class="text-center mb-12">
+            <h2 class="font-heading text-4xl font-bold mb-3">Certified Expertise</h2>
+            <p class="text-gray-600">The technical foundation powering my strategies.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                <div class="w-20 h-20 mx-auto bg-gray-50 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="bot" class="w-10 h-10 text-gray-700"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold mb-1">Hands-on AI Masterclass</h3>
+                <p class="text-xs text-gray-500 font-bold uppercase mb-4 tracking-wide">You.com / PAIR</p>
+                <p class="text-sm text-gray-600 mb-6">Prompt Engineering, AI Research, Ethical Deployment.</p>
+                <a href="https://files.inversity.co/downloads/you/7b09b6da-3743-4ff1-8d8c-3ff159ff9897" target="_blank" class="text-sm font-bold underline decoration-2 decoration-yellow-400 hover:text-gray-600">View Credential</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                <div class="w-20 h-20 mx-auto bg-gray-50 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="bar-chart-2" class="w-10 h-10 text-gray-700"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold mb-1">GA4 for SEO</h3>
+                <p class="text-xs text-gray-500 font-bold uppercase mb-4 tracking-wide">Semrush Academy</p>
+                <p class="text-sm text-gray-600 mb-6">Data analytics, user behavior insights, performance tracking.</p>
+                <a href="https://static.semrush.com/academy/certificates/a1ecfd8aa6/timothy-santos_6.pdf" target="_blank" class="text-sm font-bold underline decoration-2 decoration-blue-400 hover:text-gray-600">View Credential</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                <div class="w-20 h-20 mx-auto bg-gray-50 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="terminal" class="w-10 h-10 text-gray-700"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold mb-1">Prompt Engineering</h3>
+                <p class="text-xs text-gray-500 font-bold uppercase mb-4 tracking-wide">Alison</p>
+                <p class="text-sm text-gray-600 mb-6">Crafting precise prompts for coding and creative writing.</p>
+                <a href="https://alison.com/certification/check/8903a35521" target="_blank" class="text-sm font-bold underline decoration-2 decoration-purple-400 hover:text-gray-600">View Credential</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-center hover:shadow-md transition">
+                <div class="w-20 h-20 mx-auto bg-gray-50 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="search" class="w-10 h-10 text-gray-700"></i>
+                </div>
+                <h3 class="font-heading text-lg font-bold mb-1">Advanced SEO</h3>
+                <p class="text-xs text-gray-500 font-bold uppercase mb-4 tracking-wide">Simplilearn</p>
+                <p class="text-sm text-gray-600 mb-6">Keyword research, link building, auditing. 25% visibility growth.</p>
+                <a href="#" class="text-sm font-bold underline decoration-2 decoration-pink-400 hover:text-gray-600">View Credential</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-cream-dark py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl font-heading font-extrabold mb-1">Timmy.</h2>
+                <p class="text-sm text-gray-500">Next-Gen Human-Centered Marketer</p>
+            </div>
+            
+            <div class="flex gap-8 text-sm font-medium text-gray-600">
+                <a href="#projects" class="hover:text-black">Projects</a>
+                <a href="#about" class="hover:text-black">About</a>
+                <a href="https://soloist.ai/timpreneurship" class="hover:text-black">Full Portfolio</a>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                 <p class="text-sm font-bold text-center md:text-right">Subscribe to my updates</p>
+                 <div class="flex gap-2">
+                    <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-full border border-gray-300 text-sm focus:outline-none focus:border-black">
+                    <button class="bg-black text-white px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider">Subscribe</button>
+                 </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-gray-300 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+            <p>&copy; 2025 Timmy Santos. All rights reserved.</p>
+            <div class="flex gap-4 mt-2 md:mt-0">
+                <a href="https://linkedin.com/in/timpreneurship" class="hover:text-black"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                <a href="mailto:timmysantosbiz@outlook.com" class="hover:text-black"><i data-lucide="mail" class="w-4 h-4"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+    </html>
